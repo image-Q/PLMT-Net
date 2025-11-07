@@ -85,7 +85,7 @@ For this repository, the expected performance on Argoverse 1.1 validation set is
 If you found this repository useful, please consider citing our work:
 
 ```
-@inproceedings{zhou2022hivt,
+@inproceedings{PLMT-Net,
   title={PLMT-Net: A Physics-aware Lightweight Network for Multi-agent Trajec-tory Prediction in Interactive Driving Scenarios},
   author={Wan Y, Fu L,H L,L Z,M C},
 }
