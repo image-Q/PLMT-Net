@@ -1,4 +1,4 @@
-# PLMT-Net：A Physics-aware Lightweight Network for Multiagent Trajectory Prediction in Interactive Driving Scenarios
+# PLMT-Net：A Physics-aware Lightweight Network for Multi-agent Trajectory Prediction in Interactive Driving Scenarios
 In this work, we propose a lightweight trajectory prediction framework that integrates physical information to enhance interaction modeling and runtime performance.
 
 ![](assets/image.png)
