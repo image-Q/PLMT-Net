@@ -66,6 +66,8 @@ For this repository, the expected performance on Argoverse 1.1 validation set is
 | :--- | :---: | :---: | :---: |:---:|
 | PLMT-Net | 0.67 | 1.02 | 0.09 |652K|
 | HiVT-64 | 0.69 | 1.03 | 0.10 |662K|
+| LaneGCN | 0.71 | 1.08 | 0.10 |3701K|
+| DenseTNT | 0.75 | 1.05 | 0.10 |1103K|
 
 ### Qualitative Results
 
