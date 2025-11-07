@@ -1,4 +1,4 @@
-# HiVT: Hierarchical Vector Transformer for Multi-Agent Motion Prediction
+# PLMT-Net：A Physics-aware Lightweight Network for Mul-ti-agent Trajectory Prediction in Interactive Driving Scenarios
 This repository contains the official implementation of [HiVT: Hierarchical Vector Transformer for Multi-Agent Motion Prediction](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhou_HiVT_Hierarchical_Vector_Transformer_for_Multi-Agent_Motion_Prediction_CVPR_2022_paper.pdf) published in CVPR 2022.
 
 ![](assets/overview.png)
