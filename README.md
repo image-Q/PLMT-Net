@@ -87,7 +87,7 @@ If you found this repository useful, please consider citing our work:
 ```
 @inproceedings{PLMT-Net,
   title={PLMT-Net: A Physics-aware Lightweight Network for Multi-agent Trajec-tory Prediction in Interactive Driving Scenarios},
-  author={Wan Y, Fu L,H L,L Z,M C},
+  author={Yu Wan,Liu Fuyun,Liu Huiqi,Zhao Liangliang and Chen Ming},
 }
 ```
 
