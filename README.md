@@ -1,20 +1,20 @@
 # PLMT-Net：A Physics-aware Lightweight Network for Mul-ti-agent Trajectory Prediction in Interactive Driving Scenarios
 In this work, we propose a lightweight trajectory prediction framework that integrates physical information to enhance interaction modeling and runtime performance.
 
-![](assets/overview.png)
+![](assets/image.png)
 
 ## Gettting Started
 
 1\. Clone this repository:
 ```
-git clone https://github.com/ZikangZhou/HiVT.git
-cd HiVT
+git clone https://github.com/image-Q/PLMT-Net.git
+cd PLMT-Net
 ```
 
 2\. Create a conda environment and install the dependencies:
 ```
-conda create -n HiVT python=3.8
-conda activate HiVT
+conda create -n PLMT-Net python=3.8
+conda activate PLMT-Net
 conda install pytorch==1.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 conda install pytorch-geometric==1.7.2 -c rusty1s -c conda-forge
 conda install pytorch-lightning==1.5.2 -c conda-forge
@@ -39,17 +39,10 @@ conda install pytorch-lightning==1.5.2 -c conda-forge
 
 ## Training
 
-To train HiVT-64:
+To train PLMT-Net:
 ```
 python train.py --root /path/to/dataset_root/ --embed_dim 64
 ```
-
-To train HiVT-128:
-```
-python train.py --root /path/to/dataset_root/ --embed_dim 128
-```
-
-**Note**: When running the training script for the first time, it will take several hours to preprocess the data (~3.5 hours on my machine). Training on an RTX 2080 Ti GPU takes 35-40 minutes per epoch.
 
 During training, the checkpoints will be saved in `lightning_logs/` automatically. To monitor the training process:
 ```
@@ -63,38 +56,36 @@ To evaluate the prediction performance:
 python eval.py --root /path/to/dataset_root/ --batch_size 32 --ckpt_path /path/to/your_checkpoint.ckpt
 ```
 
-## Pretrained Models
-
-We provide the pretrained HiVT-64 and HiVT-128 in [checkpoints/](checkpoints). You can evaluate the pretrained models using the aforementioned evaluation command, or have a look at the training process via TensorBoard:
-```
-tensorboard --logdir checkpoints/
-```
-
 ## Results
 
 ### Quantitative Results
 
 For this repository, the expected performance on Argoverse 1.1 validation set is:
 
-| Models | minADE | minFDE | MR |
-| :--- | :---: | :---: | :---: |
-| HiVT-64 | 0.69 | 1.03 | 0.10 |
-| HiVT-128 | 0.66 | 0.97 | 0.09 |
+| Models | minADE | minFDE | MR |Param|
+| :--- | :---: | :---: | :---: |:---:|
+| PLMT-Net | 0.67 | 1.02 | 0.09 |652K|
+| HiVT-64 | 0.69 | 1.03 | 0.10 |662K|
 
 ### Qualitative Results
 
-![](assets/visualization.png)
-
+![](assets/image2.png)
+![](assets/image3.png)
 ## Citation
 
-If you found this repository useful, please consider citing our work:
-
-```
 @inproceedings{zhou2022hivt,
   title={HiVT: Hierarchical Vector Transformer for Multi-Agent Motion Prediction},
   author={Zhou, Zikang and Ye, Luyao and Wang, Jianping and Wu, Kui and Lu, Kejie},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2022}
+}
+
+If you found this repository useful, please consider citing our work:
+
+```
+@inproceedings{zhou2022hivt,
+  title={PLMT-Net: A Physics-aware Lightweight Network for Multi-agent Trajec-tory Prediction in Interactive Driving Scenarios},
+  author={Wan Y, Fu L,H L,L Z,M C},
 }
 ```
 
